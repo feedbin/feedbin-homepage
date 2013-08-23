@@ -3,11 +3,11 @@
 ------------------------------------------------------------------------------*/
 @font-face {
 	font-family: 'Open Sans Light';
-	src: url('/assets/feedbin_homepage/OpenSans-Light.eot');
-	src: url('/assets/feedbin_homepage/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-		 url('/assets/feedbin_homepage/OpenSans-Light.woff') format('woff'),
-		 url('/assets/feedbin_homepage/OpenSans-Light.ttf') format('truetype'),
-		 url('/assets/feedbin_homepage/OpenSans-Light.svg#OpenSansLight') format('svg');
+	src: font-url('feedbin_homepage/OpenSans-Light.eot');
+	src: font-url('feedbin_homepage/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		 font-url('feedbin_homepage/OpenSans-Light.woff') format('woff'),
+		 font-url('feedbin_homepage/OpenSans-Light.ttf') format('truetype'),
+		 font-url('feedbin_homepage/OpenSans-Light.svg#OpenSansLight') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -302,7 +302,7 @@ p {
 	width: 135px;
 	height: 26px;
 	display: block;
-	background: url("/assets/feedbin_homepage/logo.png") 0 0 no-repeat;
+	background-image: image-url("feedbin_homepage/logo.png");
 	background-size: 135px 26px;
 }
 .header-nav {
@@ -379,7 +379,7 @@ p {
 	border-top: 1px solid #FFF;
 }
 .callout {
-	background: url("/assets/feedbin_homepage/api-promo.png") no-repeat;
+	background: image-url("feedbin_homepage/api-promo.png") no-repeat;
 	background-size: 270px 152.5px;
 	background-position: 720px 52px;
 	background-color: #292929;
@@ -513,31 +513,31 @@ footer a:hover {
 	padding: 0 0 0 35px;
 }
 .content-icon-arrows {
-	background-image: url("/assets/feedbin_homepage/icon-arrows.svg");
+	background-image: image-url("feedbin_homepage/icon-arrows.svg");
 }
 .content-icon-layout {
-	background-image: url("/assets/feedbin_homepage/icon-layout.svg");
+	background-image: image-url("feedbin_homepage/icon-layout.svg");
 }
 .content-icon-lightning {
-	background-image: url("/assets/feedbin_homepage/icon-lightning.svg");
+	background-image: image-url("feedbin_homepage/icon-lightning.svg");
 }
 .content-icon-lock {
-	background-image: url("/assets/feedbin_homepage/icon-lock.svg");
+	background-image: image-url("feedbin_homepage/icon-lock.svg");
 }
 .content-icon-rss {
-	background-image: url("/assets/feedbin_homepage/icon-rss.svg");
+	background-image: image-url("feedbin_homepage/icon-rss.svg");
 }
 .content-icon-tags {
-	background-image: url("/assets/feedbin_homepage/icon-tags.svg");
+	background-image: image-url("feedbin_homepage/icon-tags.svg");
 }
 .content-icon-readability {
-	background-image: url("/assets/feedbin_homepage/icon-readability.svg");
+	background-image: image-url("feedbin_homepage/icon-readability.svg");
 }
 .content-icon-share {
-	background-image: url("/assets/feedbin_homepage/icon-share.svg");
+	background-image: image-url("feedbin_homepage/icon-share.svg");
 }
 .content-icon-edit {
-	background-image: url("/assets/feedbin_homepage/icon-edit.svg");
+	background-image: image-url("feedbin_homepage/icon-edit.svg");
 }
 .loud {
 	color: #666;
