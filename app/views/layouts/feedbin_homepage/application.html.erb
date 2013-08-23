@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FeedbinHomepage</title>
+  <title>Feedbin</title>
+  <meta name="description" content="A fast, simple RSS feed reader that delivers a great reading experience." />
   <%= stylesheet_link_tag    "feedbin_homepage/application", media: "all" %>
   <%= javascript_include_tag "feedbin_homepage/application" %>
   <%= csrf_meta_tags %>
@@ -9,6 +10,6 @@
 <body>
 
 <%= yield %>
-
+<%= render partial: "feedbin_homepage/shared/tracking" %>
 </body>
 </html>
