@@ -174,7 +174,8 @@ body, html {
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	background-color: #FFF;
+	background-color: #959697;
+	line-height: 1.4;
 }
 
 a {
@@ -258,6 +259,7 @@ h1 {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 40px;
+	line-height: 43px;
 	color: #fff;
 	margin: 0 0 25px 0;
 }
@@ -287,7 +289,8 @@ p {
 }
 .header-wrap {
 	position: relative;
-	@include background-image(linear-gradient(left, #081424, #0099ff));
+	background-image: -webkit-linear-gradient(left,#081424,#0099ff);
+	background-image: linear-gradient(to right,#081424,#0099ff);
 }
 .header-bar {
 	padding: 16px 0;
@@ -321,7 +324,7 @@ p {
 .header-nav a:hover {
 	text-decoration: none;
 }
-.header-nav .button-red {
+.header-nav .button-signup {
 	margin-left: 10px;
 	padding: 10px 20px;
 	background-color: #3399ff;
@@ -370,12 +373,13 @@ p {
 	color: #FFF;
 }
 .main-content {
-	@include background-image(linear-gradient(#eeeeee 1%, #fff 60%));
+	background-image: -webkit-linear-gradient( #eeeeee 1%,white 60%);
+	background-image: linear-gradient( #eeeeee 1%,white 60%);
 	padding: 60px 0 90px 0;
 	border-top: 1px solid #FFF;
 }
 .callout {
-	background: image-url("api-promo.png") no-repeat;
+	background: url("/assets/feedbin_homepage/api-promo.png") no-repeat;
 	background-size: 270px 152.5px;
 	background-position: 720px 52px;
 	background-color: #292929;
@@ -389,8 +393,9 @@ p {
 	color: #999999;
 }
 .apps-promo {
-	padding-top: 1px;
-	@include background-image(linear-gradient(#e5e5e5, #cacaca));
+	padding-top: 15px;
+	background-image: -webkit-linear-gradient( #e5e5e5,#cacaca);
+	background-image: linear-gradient( #e5e5e5,#cacaca);
 }
 .round-icon {
 	border-radius: 9px;
@@ -422,10 +427,8 @@ img.hide {
 	margin: 0;
 	padding: 0;
 }
-.screenshot-nav li:first-child {
-	a {
-		margin-left: 0;
-	}
+.screenshot-nav li:first-child 	a {
+	margin-left: 0;
 }
 .screenshot-nav li.active a {
 	background-color: #3399ff;
